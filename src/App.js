@@ -34,7 +34,7 @@ function App() {
         } else {
           alert("Ciudad no encontrada");
         }
-      });
+      }).catch((e)=>alert(e));
   
     }
 
