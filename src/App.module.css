@@ -1,0 +1,41 @@
+.app {
+    background-image: url("../src/components/assets/fondoWheater.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.backG {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(16px);
+     background-color: #71717170;
+    }
+    .citiesContainer {
+        display: flex;
+        height: 100%;
+        background-color: #00000075;
+        backdrop-filter: blur(4px);
+        justify-content: space-between;
+        
+    }
+.container {
+    width: 70vw;
+    height: 80vh;
+    position: absolute;
+    margin: 10vh 14vw;
+    top: 0;
+    overflow: hidden;
+    background-image: url("../src/components/assets/fondoWheater.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 120vh;
+}
