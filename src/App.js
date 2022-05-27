@@ -6,14 +6,12 @@ import Cards from './components/Cards.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import { Cairns } from './data.js';
 
-const apiKey = process.env.REACT_APP_APIKEY;
-
 
 function App() {
   const [data,  setData] = React.useState([])
 
   function onSearch(ciudad) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+ciudad+'&appid=4ae2636d8dfbdc3044bede63951a019b')
       .then(r => r.json())
       .then((recurso) => {
         if(recurso?.cod !== '404'&&recurso!==''){
